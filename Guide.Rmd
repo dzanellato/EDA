@@ -1,0 +1,61 @@
+---
+title: "Análise Exploratória de Dados: um Guia"
+date: "2020-04-13"
+
+output: 
+  bookdown::html_document2:
+#    base_format: prettydoc::html_pretty  
+    theme: default
+
+bibliography: '../Bibliografia/referencias.bib'
+csl: '../Bibliografia/jmp.csl'
+css: '../Bibliografia/estilo.css'
+---
+
+
+\
+
+**Motivações para a análise de dados**[@pearson_eda]:
+
+<div class=caixa>
+1. compreender o que ocorreu ou está ocorrendo;
+1. prever o que pode ocorrer no futuro ou em condições ainda não observadas;
+1. guiar tomadas de decisões.
+</div>
+
+Dos três itens listados acima, os dois últimos são algumas das aplicações da chamada *modelagem estatística*. Por sua vez, é imprescindível à modelagem que as amostras utilizadas sejam **confiáveis** e **representativas** da população em análise. Averiguar a qualidade dos dados é um dos objetivos da *Análise Exploratória de Dados*.
+
+Segundo Pearson[@pearson_eda]:
+
+> Roughly speaking, exploratory data analysis (EDA) may be defined as the art of looking at one or more datasets in an effort to understand the underlying structure of the data contained there.
+
+Sendo assim, podemos dizer que os objetivos da análise exploratória são de preparação e obtenção de informações dos dados que serão posteriormente modelados e utilizados na inferência estatística. 
+
+**Estratégia geral**[@pearson_eda]:
+
+<div class=caixa>
+1. Determinar as características gerais do dataset, e.g.:
+    a. Números de instâncias e de variáveis;
+    a. Nomes das variáveis (eles fazem sentido?);
+    a. Tipos de variáveis (nominais, contínuas etc.);
+    a. Realizações possíveis de cada variável;
+    a. Realizações mais frequentes e as suas respectivas frequências;
+    a. Número de observações faltantes.
+1. Estatística descritiva para cada variável (medidas de centralidade, dispersão etc.);
+1. Realizar visualiações exploratórias (gráficos de barra, histogramas etc.);
+1. Analisar e tratar possíveis anomalias: outliers, inliers, dados faltantes, inconsistências etc.; 
+1. Analisar relações entre as variáveis (análise bivariada, multivariada etc.);
+1. Resumir os resultados em um *data dictionary* que servirá para análises futuras e explicação dos resultados.  
+</div>
+
+Além disso, a formulação de perguntas e a busca pelas suas respostas, embasadas nos dados em análise, constituem um bom guia para a obtenção de informações relevantes.
+
+
+---
+nocite: | 
+  @morettin_estbas
+---
+
+## Referências {-}
+
+***
